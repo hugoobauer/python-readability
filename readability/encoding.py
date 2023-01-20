@@ -1,8 +1,5 @@
 import re
-try:
-    import cchardet
-except ImportError:
-    import chardet
+import charset_normalizer as chardet
 import sys
 
 

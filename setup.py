@@ -18,7 +18,7 @@ if sys.platform == "darwin":
         lxml_requirement = "lxml<2.4"
 
 speed_deps = [
-     "cchardet",
+     "charset-normalizer",
 ]
 
 test_deps = [
@@ -60,7 +60,7 @@ setup(
     license="Apache License 2.0",
     url="http://github.com/buriy/python-readability",
     packages=["readability", "readability.compat"],
-    install_requires=["chardet", lxml_requirement, "cssselect"],
+    install_requires=["charset-normalizer", lxml_requirement, "cssselect"],
     tests_require=test_deps,
     extras_require=extras,
     classifiers=[
